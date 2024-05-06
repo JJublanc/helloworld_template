@@ -1,0 +1,24 @@
+.navbar {
+  background-color: #24252A;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 5px;}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;  /* Adds a gap between the items */
+}
+
+a, a:visited, a:focus, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a.active {
+    font-weight: bold;
+}

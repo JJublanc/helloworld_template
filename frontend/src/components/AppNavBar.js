@@ -1,19 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
+import {Link, useLocation} from 'react-router-dom';
+import './AppNavBar.css';
+import './LoginForm.css';
 
-function Navbar() {
-  return (
-      <nav>
-          <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/main">Main</Link></li>
-          </ul>
-          <div>
-              <button><Link to="/signup">Sign Up</Link></button>
-              <button><Link to="/login">Login</Link></button>
-          </div>
-      </nav>
-  );
+function NavBar({handleLoginClick}) {
+    const handleClick = () => {
+        handleLoginClick();
+    };
+    const location = useLocation();
+    const currentPage = location.pathname;
+    return (
+        <div>
+            <div className="navbar">
+                <ul>
+                    <li><a className={currentPage === '/home' ? 'active' : ''}
+                           href='/home'>Home</a></li>
+                    <li><a className={currentPage === '/main' ? 'active' : ''}
+                           href='/main'>Main</a></li>
+                </ul>
+            </div>
+            <div>
+                <span onClick={handleClick} className="loginicon">
+                  LogIn
+                </span>
+            </div>
+        </div>
+    )
+        ;
 }
 
-export default Navbar;
+export default NavBar;
