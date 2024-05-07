@@ -1,7 +1,13 @@
+@import './Var.css';
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
 }
 
 .main {
@@ -11,24 +17,29 @@
 }
 
 .App {
-  text-align: center;
-  display: flex;
+    text-align: center;
+    display: flex;
 }
 
 .PageContainer {
-  justify-content: center;
-  text-align: center;
-  margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .footer {
     display: flex;
-    background-color: #333; /* Utilisez votre couleur préférée ici */
-    color: #fff; /* Couleur du texte */
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgound-color); /* Utilisez votre couleur préférée ici */
+    color: var(--text-color); /* Couleur du texte */
     padding: 1em;
     margin-top: auto;
 }
 
 .footer-column {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
