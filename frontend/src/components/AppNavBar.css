@@ -1,6 +1,7 @@
 @import '../Var.css';
 
 .navbar {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
     background-color: var(--backgound-color);
@@ -10,16 +11,16 @@
     align-items: flex-end;
     height: 5%;
     padding-top: 1%;
-    padding-bottom: 1%;
 }
 
 .navbar ul {
     display: flex;
     font-size: 15px;
     list-style: none;
-    align-items: center;
-    align-content: center;
-    gap: 15px; /* Adds a gap between the items */
+    align-items: baseline;
+    align-content: baseline;
+    margin-bottom: 5px;
+    gap: 12px; /* Adds a gap between the items */
 }
 
 a, a:visited, a:focus, a:active {
@@ -32,7 +33,10 @@ a, a:visited, a:focus, a:active {
 }
 
 .nav-logo {
-    margin-left: 40px;
+    margin-left: 3%;
+    margin-right: 20px;
+    align-items: center;
+    align-content: center;
     font-size: 30px;
     font-weight: bold;
 }

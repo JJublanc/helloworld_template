@@ -2,15 +2,16 @@
 
 .loginicon {
   position: fixed;
-  width: 80px;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bolder;
+  font-size: 10px;
   color: var(--backgound-color);
-  height: 3%;
-  left: 85%;
+  height: 2.5%;
+  aspect-ratio: 1/1;
+  right: 3%;
   top: 1%;
   background:white;
   border-radius: 24px;
@@ -40,7 +41,6 @@
 .login-text{
   width: 100%;
   color: white;
-  width: 100%;
   font-weight: bolder;
   text-align: center;
   display: flex;

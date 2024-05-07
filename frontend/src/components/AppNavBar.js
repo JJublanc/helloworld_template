@@ -15,8 +15,8 @@ function NavBar({handleLoginClick}) {
                 <ul>
                     <img src='picture.png'
                          alt='logo'
-                         height='3%'
-                         width='3%'
+                         height='4%'
+                         width='4%'
                     className="nav-logo"/>
                     <li><a className={currentPage === '/home' ? 'active' : ''}
                            href='/home'>Home</a></li>
@@ -26,7 +26,10 @@ function NavBar({handleLoginClick}) {
             </div>
             <div>
                 <span onClick={handleClick} className="loginicon">
-                  LogIn
+                  <img src="login.png"
+                       height='80%'
+                       width='80%'
+                       alt="Log In"/>
                 </span>
             </div>
         </div>

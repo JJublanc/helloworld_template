@@ -33,7 +33,9 @@ function App() {
             </div>
             <div className="footer">
                 <div className="footer-column">
-                   Credits : "Picture" By Freepik on Flaticon.com
+                   Credits :
+                    "Picture" By Freepik on Flaticon.com
+                    "User" By Febrian Hidayat on Flaticon.com
                 </div>
                 <div className="footer-column">
                    Colonne 2
