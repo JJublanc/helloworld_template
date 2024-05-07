@@ -16,7 +16,7 @@ function App() {
 
     return (
         <Router className={App}>
-            <div className={App}>
+            <div className="main">
                 <div>
                     <Navbar handleLoginClick={handleLoginClick}/>
                 </div>
@@ -29,6 +29,17 @@ function App() {
                             <Route path="/main" element={<MainPage/>}/>
                         </Routes>
                     </div>
+                </div>
+            </div>
+            <div className="footer">
+                <div className="footer-column">
+                   Colonne 1
+                </div>
+                <div className="footer-column">
+                   Colonne 2
+                </div>
+                <div className="footer-column">
+                   Colonne 3
                 </div>
             </div>
         </Router>
