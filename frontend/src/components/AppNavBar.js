@@ -13,6 +13,11 @@ function NavBar({handleLoginClick}) {
         <div>
             <div className="navbar">
                 <ul>
+                    <img src='picture.png'
+                         alt='logo'
+                         height='3%'
+                         width='3%'
+                    className="nav-logo"/>
                     <li><a className={currentPage === '/home' ? 'active' : ''}
                            href='/home'>Home</a></li>
                     <li><a className={currentPage === '/main' ? 'active' : ''}

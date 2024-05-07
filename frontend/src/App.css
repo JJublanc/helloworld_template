@@ -32,7 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--backgound-color); /* Utilisez votre couleur préférée ici */
-    color: var(--text-color); /* Couleur du texte */
+    color: white; /* Couleur du texte */
     padding: 1em;
     margin-top: auto;
 }
