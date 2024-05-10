@@ -1,0 +1,16 @@
+.article {
+  display: flex;
+  margin-bottom: 2em;
+  padding: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: #FFFFF9;
+}
+
+.article img {
+  margin-right: 1em;
+}
+
+.article div {
+  text-align: left;
+}

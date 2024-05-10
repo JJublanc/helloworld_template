@@ -17,11 +17,13 @@ function NavBar({handleLoginClick}) {
                          alt='logo'
                          height='4%'
                          width='4%'
-                    className="nav-logo"/>
+                         className="nav-logo"/>
                     <li><a className={currentPage === '/home' ? 'active' : ''}
                            href='/home'>Home</a></li>
                     <li><a className={currentPage === '/main' ? 'active' : ''}
                            href='/main'>Main</a></li>
+                    <li><a className={currentPage === '/blog' ? 'active' : ''}
+                           href='/blog'>Blog</a></li>
                 </ul>
             </div>
             <div>

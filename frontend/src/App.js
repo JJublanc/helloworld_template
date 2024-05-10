@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Navbar from './components/AppNavBar';
 import HomePage from './pages/HomePage';
 import MainPage from './pages/MainPage';
+import Blog from './pages/blog/BlogPage';
 import LoginForm from './components/LoginForm';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                             <Route path="/" element={<HomePage/>}/>
                             <Route path="/home" element={<HomePage/>}/>
                             <Route path="/main" element={<MainPage/>}/>
+                            <Route path="/blog" element={<Blog/>}/>
                         </Routes>
                     </div>
                 </div>
@@ -36,6 +38,8 @@ function App() {
                    Credits :
                     "Picture" By Freepik on Flaticon.com
                     "User" By Febrian Hidayat on Flaticon.com
+                    Image article 1 by Quang NGUYEN DANG from Pixabay
+                    Image article 2 by Karl Egger from Pixabay
                 </div>
                 <div className="footer-column">
                    Colonne 2
