@@ -1,40 +1,43 @@
 import React from 'react';
-import image1 from './articles/pink-algae-5389441_1280.jpg'
-import image2 from './articles/mountains-8540738_1280.jpg'
-import './BlogPage.css'
+import articles from './articles/content.json';
+import './BlogPage.css';
+import {Link} from 'react-router-dom';
+
 class Blog extends React.Component {
     render() {
         return (
             <div>
                 <h1>Mon Blog</h1>
-                <Article
-                    title="Article 1"
-                    summary="Ceci est un résumé pour l'article 1."
-                    image={image1}
-                />
-                <Article
-                    title="Article 2"
-                    summary="Ceci est un résumé pour l'article 2."
-                    image={image2}
-                />
+                {articles.map((article, index) => (
+                    <ArticlePreview
+                        key={index}
+                        id={article.id}
+                        title={article.title}
+                        summary={article.summary}
+                        image={require("" + article.image)}
+                    />
+                ))}
             </div>
         );
     }
 }
 
-class Article extends React.Component {
+class ArticlePreview extends React.Component {
     render() {
         return (
-            <div className='article'>
-                <img src={this.props.image}
-                     alt="logo"
-                     height='10%'
-                     width='10%'/>
-                <div>
-                    <h2>{this.props.title}</h2>
-                    <p>{this.props.summary}</p>
+            <Link to={`/article/${this.props.id}`} style={{ color: 'black', textDecoration: 'none' }}>
+                <div className='article'>
+                    <img src={this.props.image}
+                         alt=""
+                         height='10%'
+                         width='10%'
+                    />
+                    <div>
+                        <h2>{this.props.title}</h2>
+                        <p>{this.props.summary}</p>
+                    </div>
                 </div>
-            </div>
+            </Link>
         );
     }
 }

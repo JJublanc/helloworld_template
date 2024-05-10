@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Article 1",
+        "summary": "Ceci est un résumé pour l'article 1.",
+        "image": "./articles/pink-algae-5389441_1280.jpg",
+        "content": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum."
+    },
+    {
+        "id": 2,
+        "title": "Article 2",
+        "summary": "Ceci est un résumé pour l'article 2.",
+        "image": "./articles/mountains-8540738_1280.jpg",
+        "content": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum."
+    }
+]

@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Navbar from './components/AppNavBar';
 import HomePage from './pages/HomePage';
 import MainPage from './pages/MainPage';
+import Article from './pages/Article';
 import Blog from './pages/blog/BlogPage';
 import LoginForm from './components/LoginForm';
 
@@ -29,6 +30,7 @@ function App() {
                             <Route path="/home" element={<HomePage/>}/>
                             <Route path="/main" element={<MainPage/>}/>
                             <Route path="/blog" element={<Blog/>}/>
+                            <Route path="/article/:id" element={<Article/>}/>
                         </Routes>
                     </div>
                 </div>
