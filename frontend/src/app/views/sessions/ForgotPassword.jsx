@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Card, Grid, styled, TextField } from "@mui/material";
+import axios from "axios";
 
 // STYLED COMPONENTS
 const StyledRoot = styled("div")(() => ({
@@ -31,10 +32,18 @@ const ContentBox = styled("div")(({ theme }) => ({
 
 export default function ForgotPassword() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("admin@example.com");
+  const [email, setEmail] = useState("johan28@hotmail.fr");
 
-  const handleFormSubmit = () => {
-    console.log(email);
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      console.log(`${process.env.REACT_APP_API_URL}/api/login/reset-password`);
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/login/request-reset-password`, { email });
+      console.log(response.data);
+    }
+    catch (error) {
+      console.error(error);
+    }
   };
 
   return (
